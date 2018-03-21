@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Statistics</title>
+    </head>
+    <body>
+        <p>
+            <table style="border-style: solid">
+                <tr>
+                    <th>Method</th>
+                    <th>Count</th>
+                </tr>
+                {% for row in stats %}
+                <tr>
+                    <td>{{ row }}</td>
+                    <td>{{ stats[row] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </p>
+
+    </body>
+</html>
